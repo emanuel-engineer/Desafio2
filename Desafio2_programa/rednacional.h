@@ -6,7 +6,7 @@ class rednacional
 {
 public:
     rednacional();
-    int FijarPreciosCombustible();
+    int FijarPreciosCombustibleGlobal();
     int VentasTotales(int CalcularVentasTotales);
     char AgregarEstacion();
     char EliminarEstacion();
