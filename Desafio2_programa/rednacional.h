@@ -1,6 +1,6 @@
 #ifndef REDNACIONAL_H
 #define REDNACIONAL_H
-using namespace std;
+//using namespace std;
 
 class rednacional
 {

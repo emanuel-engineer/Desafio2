@@ -5,14 +5,14 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
-      <y>50</y>
+      <x>360</x>
+      <y>0</y>
       <w>250</w>
       <h>130</h>
     </coordinates>
     <panel_attributes>RedNacional
 --
--vector estaciones
+- estaciones
 --
 +agregarEstacion(EstacionServicio*)
 +eliminarEstacion(string)
@@ -24,8 +24,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
-      <y>170</y>
+      <x>360</x>
+      <y>120</y>
       <w>30</w>
       <h>80</h>
     </coordinates>
@@ -35,8 +35,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
-      <y>230</y>
+      <x>360</x>
+      <y>180</y>
       <w>210</w>
       <h>270</h>
     </coordinates>
@@ -48,16 +48,104 @@
 -string region
 -Ubicacion ubicacion
 -Tanque* tanque
--vector&lt;Surtidor*&gt; surtidores
+-Surtidor* surtidores
 --
 +agregarSurtidor(Surtidor*)
 +eliminarSurtidor(string)
++TipoSurtidor(string)
++CapacidadSurtidor
 +activarSurtidor(string)
 +desactivarSurtidor(string)
 +consultarTransacciones()
 +reportarVentas()
 +simularVenta()
 </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>170</y>
+      <w>110</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Precios
+--
+-PrecioGlobal
+-PrecioNorte
+-PrecioCentro
+-PrecioSur
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>380</y>
+      <w>110</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Gerente
+--
+-string nombre</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>330</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>510</y>
+      <w>100</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Ubicacion
+--
+-float Latitud
+-float Longitud
+-float Altitud</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>390</y>
+      <w>60</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>310</y>
+      <w>200</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Transaccion
+--
+-Date fecha
+-Time hora
+-Combustible tipoCombustible
+-float cantidad
+-string documentoCliente
+-float monto</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
