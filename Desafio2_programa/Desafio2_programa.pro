@@ -4,8 +4,6 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp \
-        rednacional.cpp
+        main.cpp
 
-HEADERS += \
-    rednacional.h
+HEADERS +=
